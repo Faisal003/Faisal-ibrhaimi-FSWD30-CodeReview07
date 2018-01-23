@@ -1,0 +1,315 @@
+
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  font-family: Muli;
+}
+
+body, html {
+  max-width: 1920px;
+  font-family: sans-serif;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0  ;
+    padding: 0 ;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    font-size: 20px;
+
+
+}
+
+li {
+    float: left;
+    margin: 5px 20px ;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+#page-container {
+  
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+
+.logo {
+    width:100%;
+    height: 120px;
+    background-color: #7B238A;
+    display: flex;
+    justify-content: center;
+}
+.logo img {
+    max-width: 90%;
+    height: auto;
+    padding: 20px 0 30px 0;
+}
+.background img {
+    width: 100%;
+    top: 120px;
+}
+
+
+.welcome p {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    color: white;
+    font-size: 8em;
+    font-weight: 1000;
+}
+.logo-text {
+  color: red;
+}
+
+#logo-img {
+  width: 500px;
+  height: 70px;
+  margin: 10px;
+  background: url(img/logo.png) 50% 50% no-repeat;
+  background-size: 500px;
+}
+
+
+/*.male {
+  background-color: white;
+  font-size: 30px;
+  width: 47%;
+}
+
+.container {
+  padding-left: 27px;
+  padding-top: 7px;
+}*/
+
+
+.Persons img{
+  width: 170px;
+  height: 170px;
+}
+
+.Persons{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 180%;
+}
+
+.person0 {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #d699ff; 
+  width: 620px;
+  height: 230px;
+  margin: 20px 10px;
+}
+
+.person0 p{
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.person0 button {
+  width: 100px;
+  height: 50px;
+  background-image: linear-gradient(#830fa3,#d699ff);
+  border-radius: 20px;
+  align-self: flex-end;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.person1 {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #d699ff; 
+  width: 620px;
+  height: 230px;
+  margin: 20px 10px;
+}
+
+.person1 button {
+  width: 100px;
+  height: 50px;
+  font-size: 25px;
+  background-image: linear-gradient(#830fa3,#d699ff);
+  border-radius: 20px;
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.person1 p{
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.person2 {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #d699ff; 
+  width: 620px;
+  height: 230px;
+  margin: 20px 10px;
+}
+
+.person2 button {
+  width: 100px;
+  height: 50px;
+  background-image: linear-gradient(#830fa3,#d699ff);
+  border-radius: 20px;
+  align-self: flex-end;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.person2 p{
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.person3 {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #d699ff; 
+  width: 620px;
+  height: 230px;
+  margin: 20px 10px;
+}
+
+.person3 button {
+  width: 100px;
+  height: 50px;
+  align-self: flex-end;
+  margin-bottom: 10px;
+  background-image: linear-gradient(#830fa3,#d699ff);
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+.person3 p{
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.Persons #heartmini{
+  align-self: flex-end;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.person4 {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #d699ff; 
+  width: 620px;
+  height: 230px;
+  margin: 20px 10px;
+}
+
+.person4 button {
+  width: 100px;
+  height: 50px;
+  font-size: 25px;
+  background-image: linear-gradient(#830fa3,#d699ff);
+  border-radius: 20px;
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.person4 p{
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.person5 {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #d699ff; 
+  width: 620px;
+  height: 230px;
+  margin: 20px 10px;
+}
+
+.person5 button {
+  width: 100px;
+  height: 50px;
+  font-size: 25px;
+  background-image: linear-gradient(#830fa3,#d699ff);
+  border-radius: 20px;
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.person5 p{
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+#footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#footer hr {width: 90%;}
+
+#logo-footer {
+  width: 250px;
+  height: 50px;
+  margin: 20px 20px 50px 20px;
+  padding: 20px;
+  background: url(img/logo-footer.png) 50% 50% no-repeat;
+  background-size: 250px;   
+}
+#copyright {
+  background-color: ;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  font-weight: 900;
+  
+}
+
+
+
