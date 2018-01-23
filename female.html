@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Female</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+<style>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+#copyright {
+  background-color: ;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  font-weight: 900;
+  
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="#home" href="index.html">Home</a></li>
+  <li><a class="#male" href="male.html">Male</a></li>
+</ul>
+
+<div class="logo" ><img src="img/logo.png" alt="coders dating logo"></div>
+
+
+  <div class="background">
+    <img src="img/backgroundfemale.jpg" alt="Welcome to our website image">
+   <!-- <div class="welcome">
+        <p>Welcome to<br> our website</p>
+    </div> -->
+
+<!--<div class="container">
+  <a href="male.html"><button class="male">Male</button></a>
+</div>
+</div>-->
+
+
+
+ <script>
+var Persons =[{
+                name: 'Sara',
+                surname: 'Khan',
+                favoritePerformers: ["Justin Timberlake", "Ed Sheeran", "Emma Watson"],
+                age: 25,
+                myPhoto: "img/female.jpg", 
+                likes: 5,
+                numberoflikes: function (i){
+                    likes = this.likes + 1;
+                    document.getElementById('0').innerHTML= likes ;
+                }
+            },{
+                name: 'Sadaf',
+                surname: 'hamza',
+                favoritePerformers:["Skillet","Linkin Park","Ed Sheeran"],
+                age: 22,
+                myPhoto: "img/female1.jpg",
+                likes:2,
+                numberoflikes: function (i){
+                    likes = this.likes + 1;
+                    document.getElementById('1').innerHTML= likes ;
+                }
+            },{
+                name: 'Dokhtar',
+                surname: 'hamdard',
+                favoritePerformers:["Shakira","Emma Watson","Logan Poul"],
+                age: 16,
+                myPhoto: "img/female2.jpg",
+                likes:10,
+                numberoflikes: function (i){
+                    likes = this.likes + 1;
+                    document.getElementById('2').innerHTML= likes ;
+                }
+            },{
+                name: 'Shekiba',
+                surname: 'Ahmadi',
+                favoritePerformers:["Shakira","Emma Watson","Logan Poul"],
+                age: 16,
+                myPhoto: "img/female3.jpg",
+                likes:10,
+                numberoflikes: function (i){
+                    likes = this.likes + 1;
+                    document.getElementById('2').innerHTML= likes ;
+                }
+            },{
+                name: 'Marym',
+                surname: 'Jan',
+                favoritePerformers:["Shakira","Emma Watson","Logan Poul"],
+                age: 16,
+                myPhoto: "img/girl01.jpg",
+                likes:10,
+                numberoflikes: function (i){
+                    likes = this.likes + 1;
+                    document.getElementById('2').innerHTML= likes ;
+                }
+            },{
+                name: 'Marwa',
+                surname: 'Mehriyar',
+                favoritePerformers: ["Justin Timberlake", "Ed Sheeran", "Emma Watson"],
+                age: 14,
+                myPhoto: "img/girl02.jpg",
+                likes: 22,
+                numberoflikes: function (i){
+                    likes = this.likes + 1;
+                    document.getElementById('3').innerHTML= likes ;
+                }
+            }];
+
+document.write("<div class='Persons'>");
+for (var i=0;i<Persons.length;i++){
+    document.write("<div class='person"+i+"'>");
+    document.write("<img src='"+Persons[i].myPhoto+"'>");
+    document.write("Name : "+Persons[i].name+"<br>");
+    document.write("Surname : "+Persons[i].surname+"<br>");
+    document.write("Age : "+Persons[i].age+"<br>");
+    document.write("<button onclick='return numberoflikes["+i+"]'>Like</button><br>");
+    document.write("<img id='heartmini' src='img/heart.svg.png'>");
+    document.write("<p id='"+i+"' style='color:red'>"+Persons[i].likes+"</p><br>");
+    document.write("</div>");
+}
+
+document.write("</div><br><br><hr>");
+</script>
+   <div id="copyright" ><p>Copyright ©2018 Coders Dating, All Rights Reserved</p>
+    </div>
+
+
+</body>
+</html>
